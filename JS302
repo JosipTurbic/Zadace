@@ -1,0 +1,13 @@
+
+    function istiZnakovi(znak){
+        let brojac=0;
+        for(i=0;i<znak.length+1;i++){
+            if(znak[i]==znak[i+1]){
+                brojac++;
+            }
+        }
+        console.log(brojac);
+    }
+
+    console.log(istiZnakovi("ba2dll"))
+   
