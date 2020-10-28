@@ -1,0 +1,72 @@
+let lista = [
+        {
+         ime: "Marko",
+         prezime: "Marković",
+         upisan: true    
+        },
+
+        {
+         ime: "Iva",
+         prezime: "Ivić",  
+         upisan: false  
+        }, 
+
+        {
+         ime: "Lucija",
+         prezime: "Lucić",    
+         upisan: true
+        }, 
+
+        {
+         ime: "Nikola",
+         prezime: "Nikolić",  
+         upisan: false
+        },
+
+        {
+         ime: "Ivan",
+         prezime: "Ivković",
+         upisan: true
+        },
+
+        {
+         ime: "Marija",
+         prezime: "Marić",
+         upisan: false    
+        },
+
+        {
+         ime: "Franjo",
+         prezime: "Franjić",
+         upisan: true
+        },
+
+        {
+         ime: "Marina",
+         prezime: "Mars",
+         upisan: false
+        },
+
+        {
+         ime: "Josip",
+         prezime: "Josić",
+         upisan: true    
+        },
+
+        {
+         ime: "Ilija",
+         prezime: "Ilić",
+         upisan: false    }
+
+            ];
+    console.log(lista[0].ime);
+
+    function provjeri(lista,pojam){
+        for(i=0;i<lista.length;i++){
+            if(lista[i].ime===pojam && lista[i].upisan===true || lista[i].prezime===pojam && lista[i].upisan===true){
+                return true;
+            };
+        };
+
+    }
+    console.log(provjeri(lista,"Josip"));
