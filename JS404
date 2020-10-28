@@ -1,0 +1,16 @@
+ let studenti = [ 
+           {ime: "Marko", prezime: "Marković", grad: "Pula"    }, 
+           {ime: "Iva", prezime: "Ivić", grad: "Našice"    },   
+           {ime: "Lucija", prezime: "Lucić", grad: "Zagreb"    }, 
+           {ime: "Nikola", prezime: "Nikolić", grad: "Rijeka"    }
+        ];
+        function napredna_pretraga(studenti, pojam) {
+            for(i=0;i<studenti.length;i++){
+              if(studenti[i].ime.indexOf(pojam) || studenti[i].prezime.indexOf(pojam) || studenti[i].grad.indexOf(pojam))  {
+                  console.log(i)
+                  break;
+              }
+            }
+        }
+
+        console.assert(napredna_pretraga(studenti, "ma ić"), 0) // ! prvi student
